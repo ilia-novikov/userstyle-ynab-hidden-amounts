@@ -1,21 +1,33 @@
-.accounts-header-balances-amount .currency,
-.ynab-grid-cell .currency,
-.ynab-breakdown .currency,
-.budget-inspector-button .currency,
-.budget-breakdown-future-totals .currency,
-.to-be-budgeted-amount .currency,
-.cost-to-be-me-summary .amount,
-.nav-account-value {
-    filter: blur(5px);
-}
+/* ==UserStyle==
+@name         YNAB hidden amounts
+@version      20251028.13.22
+@namespace    https://userstyles.world/user/ilia-novikov
+@description  Hides amounts in some YNAB views, shows them on hover
+@author       ilia -located at- nvkv.me
+@license      BSD-3-Clause
+==/UserStyle== */
 
-.accounts-header-balances-amount .currency:hover,
-.ynab-grid-cell .currency:hover,
-.ynab-breakdown .currency:hover,
-.budget-inspector-button .currency:hover,
-.budget-breakdown-future-totals .currency:hover,
-.to-be-budgeted-amount .currency:hover,
-.cost-to-be-me-summary .amount:hover,
-.nav-account-value:hover {
-    filter: none;
+@-moz-document url-prefix("https://app.ynab.com")
+{
+    .accounts-header-balances-amount .currency,
+    .ynab-grid-cell .currency,
+    .ynab-breakdown .currency,
+    .budget-inspector-button .currency,
+    .budget-breakdown-future-totals .currency,
+    .to-be-budgeted-amount .currency,
+    .cost-to-be-me-summary .amount,
+    .nav-account-value {
+        filter: blur(5px);
+    }
+
+    .accounts-header-balances-amount .currency:hover,
+    .ynab-grid-cell .currency:hover,
+    .ynab-breakdown .currency:hover,
+    .budget-inspector-button .currency:hover,
+    .budget-breakdown-future-totals .currency:hover,
+    .to-be-budgeted-amount .currency:hover,
+    .cost-to-be-me-summary .amount:hover,
+    .nav-account-value:hover {
+        filter: none;
+    }
 }
